@@ -1,0 +1,82 @@
+.contact-mail-icon{
+    margin: 0 1rem 0 0;
+    vertical-align: bottom;
+}
+.contact-container{
+    margin: 2rem 0;
+}
+.contact-form{
+    align-self: center;
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 2rem;
+
+    label{
+        color: $secondary;
+        width: 100%;
+        display: block;
+        font-size: $fz-sm;
+        margin-bottom: 0.5rem;
+    }
+    input, textarea{
+        @include input-style;
+        transition: 0.4s;
+        & ~ .focus-border{position: absolute; height: 34px; bottom: 0; right: 0; width: 0; transition: 0.4s;border-radius: 3px;}
+        &:focus ~ .focus-border{width: 100%; transition: 0.4s; border: 2px solid $highlight;}
+    }
+    textarea{
+        & ~ .focus-border{height: 50px;top: 0;}
+        &::placeholder{
+            font-family: 'Roboto-regular';
+        }
+    }
+    button{
+        display: block;
+        background-color: $bgcolor;
+        border: 1px solid $highlight;
+        padding: 0.5rem 1rem;
+        color: $highlight;
+        @include flex-center;
+        cursor: pointer;;
+        background-image: -webkit-linear-gradient(45deg, $highlight 50%, transparent 50%);
+        background-image: linear-gradient(45deg, $highlight 50%, transparent 50%);
+        background-position: 100%;
+        background-size: 400%;
+        -webkit-transition: background 300ms ease-in-out;
+        transition: background 300ms ease-in-out;
+        outline: none;
+        
+        &:hover {
+            background-position: 0;
+            color: $bgcolor;
+            background-color: $highlight;
+          }
+          
+
+        svg{
+            margin-left: 1rem;
+            margin-top: -1px;
+
+        }
+    }
+    textarea{
+        resize:none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+}
+
+.contact-mail{
+    @include scale-animation(1.05);
+    display: inline-flex;
+}
+
+.contact-input-container{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+

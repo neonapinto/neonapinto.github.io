@@ -27,7 +27,7 @@
     textarea{
         & ~ .focus-border{height: 50px;top: 0;}
         &::placeholder{
-            font-family: 'Roboto-regular';
+            font-family: 'Roboto';
         }
     }
     button{
@@ -63,7 +63,7 @@
         resize:none;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $mobile-point) {
         max-width: 100%;
         margin-bottom: 3rem;
     }

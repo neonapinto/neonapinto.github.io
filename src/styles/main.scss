@@ -1,5 +1,6 @@
 @import './variables/colors';
 @import './variables/fonts';
+@import './variables/media_query';
 @import "~animate.css/animate.css";
 @import './mixins/mixins';
 @import './modules/layout';
@@ -37,11 +38,13 @@ body{
 .element{
     position: relative;
     height: 100%;
-    @media only screen and (max-width: 400px){
+    @media only screen and (max-width: $mobile-point){
         height: auto;
+        margin-bottom: 2rem;
     }
-    @media only screen and(max-width: 800px) and (orientation: landscape){
+    @media only screen and(max-width: $medium) and (max-height: $very-small) and (orientation: landscape){
         height: auto;
+        margin-bottom: 2rem;
     }
 }
 .height-overflow{

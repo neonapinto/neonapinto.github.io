@@ -10,7 +10,6 @@
         color: $primary;
         margin: 0;
         font-size: clamp(40px, 8vw, 80px);
-        text-shadow: 2px 3px $secondary;
     }
 
     &-sub-heading{
@@ -32,7 +31,7 @@
         font-size: $fz-md;
         width: 85%;
 
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (max-width: $big) {
             width: 100%;
         }
     }

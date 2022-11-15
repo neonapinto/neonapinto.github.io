@@ -8,7 +8,7 @@
         @include flex-center;
         width: 60%;
         flex-direction: column;
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: $mobile-point) {
             width: 90%;
             margin: 1rem 0;
         }
@@ -18,12 +18,12 @@
         width: 40%;
         flex-direction: column;
         @include flex-center;
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: $mobile-point) {
             width: 90%;
         }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $mobile-point) {
         flex-direction: column;
         align-items: center;
         justify-content: center;

@@ -23,7 +23,7 @@
             @include scale-animation(1.1);
         }
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: $mobile-point) {
             left: 4rem;
         }
     }
@@ -35,7 +35,7 @@
         font-size: $fz-sm;
         padding: 0.5rem;
         @include scale-animation(1.1);
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: $mobile-point) {
             display: none;
         }
         display: inline-block;
@@ -61,7 +61,7 @@
         @include scale-animation(1.1);
         display: none;
 
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: $mobile-point) {
             display: block;
         }   
     }

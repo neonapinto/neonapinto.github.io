@@ -22,12 +22,10 @@ const Home:FC = () =>{
                 deletionSpeed={1}
                 cursor={true}
                 repeat={Infinity}
-                style={{ fontSize: 'clamp(40px, 8vw, 80px)', color:  'white', margin:0, textShadow: '2px 3px #00fef4' }}
+                style={{ fontSize: 'clamp(40px, 8vw, 80px)', color:  'white', margin:0 }}
               />
               <SubHeading>Front End Developer</SubHeading>
-              <Body>I am a Front End Developer specializing in HTML, CSS, JavaScript, React, and NodeJS. I build the things for the web.
-                  I design and code beautifully simple things, and I love what I do. Interested in the front-end spectrum and working
-                  on ambitious projects with positive people.</Body>
+              <Body>I design and code beautifully simple things, and I love what I do. Interested in the front-end spectrum and working on ambitious projects with positive people.</Body>
             </>
           } 
           right={

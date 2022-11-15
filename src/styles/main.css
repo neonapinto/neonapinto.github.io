@@ -45,7 +45,6 @@
   color: #FFFEFA;
   margin: 0;
   font-size: clamp(40px, 8vw, 80px);
-  text-shadow: 2px 3px #8892B0;
 }
 .text-sub-heading {
   color: #8892B0;
@@ -308,6 +307,7 @@
 @media only screen and (max-width: 768px) {
   .experience-container {
     max-width: 100%;
+    margin: 1rem 0;
   }
 }
 .experience-container div {
@@ -334,8 +334,14 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 100%;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+}
+@media only screen and (max-width: 1200px) {
+  .project-cards {
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 600px) {
   .project-cards {
@@ -357,12 +363,18 @@
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   background-color: #2a2a2a;
+  flex-direction: column;
 }
 .cards-container:hover {
   transform: scale(1.005);
 }
 .cards-container h3 {
   padding: 0 1rem;
+}
+@media only screen and (max-width: 1200px) {
+  .cards-container {
+    flex-direction: row;
+  }
 }
 @media only screen and (max-width: 600px) {
   .cards-container {
@@ -372,7 +384,7 @@
   }
 }
 .cards-content {
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,25 +392,24 @@
 .cards-content .text-sub-heading {
   padding-left: 1rem;
 }
-@media only screen and (max-width: 600px) {
-  .cards-content {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 1000px) {
   .cards-content {
     width: 100%;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (max-width: 600px) {
   .cards-content {
-    width: 80%;
+    width: 100%;
   }
 }
 .cards-content-text {
   color: #FFFEFA;
   font-size: 14px;
   padding: 0 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .cards-img-container {
   width: 25%;
@@ -413,19 +424,17 @@
 @media only screen and (min-width: 600px) {
   .cards-img-container {
     width: 40%;
-    height: 150px;
   }
 }
 @media only screen and (min-width: 800px) {
   .cards-img-container {
     width: 35%;
-    height: 170px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .cards-img-container {
-    width: 20%;
-    height: 15vw;
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 .cards-img-container img {
@@ -450,6 +459,19 @@
   .one-column {
     width: 90%;
   }
+}
+
+.animate__fadeInLeftBig {
+  width: 33%;
+}
+@media only screen and (max-width: 1200px) {
+  .animate__fadeInLeftBig {
+    width: 100%;
+  }
+}
+
+.project-link a {
+  color: #00FEF4;
 }
 
 .contact-mail-icon {
@@ -503,13 +525,13 @@
   top: 0;
 }
 .contact-form textarea::-moz-placeholder {
-  font-family: "Roboto-regular";
+  font-family: "Roboto";
 }
 .contact-form textarea:-ms-input-placeholder {
-  font-family: "Roboto-regular";
+  font-family: "Roboto";
 }
 .contact-form textarea::placeholder {
-  font-family: "Roboto-regular";
+  font-family: "Roboto";
 }
 .contact-form button {
   display: block;
@@ -587,14 +609,16 @@ body {
   position: relative;
   height: 100%;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .element {
     height: auto;
+    margin-bottom: 2rem;
   }
 }
-@media only screen and (max-width: 800px) and (orientation: landscape) {
+@media only screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
   .element {
     height: auto;
+    margin-bottom: 2rem;
   }
 }
 

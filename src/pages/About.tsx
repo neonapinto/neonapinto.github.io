@@ -28,23 +28,22 @@ const About:FC = () =>{
             left={
             <>
                 <Heading>About me.</Heading>
-                <Body>Hello, I'm Neona and I enjoy creating things that live on the internet. My love for the web development started back in 2017 when I started working on an Alumni website back in the University. Fast-forward to today, I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, and JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.
+                <Body>Hello, I'm Neona and I enjoy creating things that live on the internet. My love for web development started back in 2017 when I started working on an Alumni website back in the University. Having a Master's Degree in Applied Computer Science from Concordia University, fueled my enthusiasm and high energy levels to learn more. Fast-forward to today, I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, and JS including libraries like React, building innovative web apps, custom plugins, features, animations, and coding interactive layouts.  I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time. Well-organized, problem-solver, with high attention to detail.
                  </Body>
                  <p className='text-body about-contact'>
-                    Visit my <a href="https://www.linkedin.com/in/neona-pinto/" target={"_blank"}>LinkedIn</a>profile for more details.
+                    Visit my <a href="https://www.linkedin.com/in/neona-pinto/" rel="noreferrer noopener" target={"_blank"}>LinkedIn</a>profile for more details.
                  </p>
             </>
             } 
             right={
                 <>
                     <ProgressBar>{data}</ProgressBar>
-                    <div className='experience-container' onClick={() => {window.open('./resume/resume.pdf', '_blank')}}>
+                    <div className='experience-container' onClick={() => {window.open('https://www.accessresearchlabs.com/index.html', '_blank')}}>
                         <div>
                             <SubHeading>Frontend Developer</SubHeading>
                             <Tagline>Access Research Labs</Tagline>
                             <Body>2018 - 2021</Body>
                             <Body>Software and service providers with cutting-edge technology to provide effective software development, network communication, business and operations, and IT infrastructure services</Body>
-
                         </div>
                     </div>
                 </>

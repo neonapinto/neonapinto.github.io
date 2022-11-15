@@ -8,7 +8,7 @@
     p{
         margin: 0 0 0.5rem 0;
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $mobile-point) {
         max-width: 100%;
     }
 }
@@ -39,8 +39,9 @@
     background-color: $tertiary;
     @include scale-animation(1.01);
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $mobile-point) {
         max-width: 100%;
+        margin: 1rem 0;
     }
 
     div{

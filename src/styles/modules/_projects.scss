@@ -8,19 +8,23 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         width: 100%;
-        flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $desktop-point) {
+            justify-content: space-between;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: $small) {
             width: 100%;
         }
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: $small) {
         align-items: center;
     }
 }
 .cards{
-
     &-container{
         display: flex;
         width: 100%;
@@ -29,20 +33,26 @@
         @include border(-2px, 2px, 5px, 0px, rgb(33 25 25 / 65%));
         @include scale-animation(1.005);
         background-color: $tertiary;
-        
+        flex-direction: column;
 
         h3{
             padding:  0 1rem;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $desktop-point) {
+            flex-direction: row;
+        }
+
+        @media only screen and (max-width: $small) {
             flex-direction: column;
             width: 100%;
             margin: 1rem 0;
         }
+
+
     }
     &-content{
-        width: 75%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -50,21 +60,21 @@
         .text-sub-heading{
             padding-left: 1rem;
         }
-
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $big) {
             width: 100%;
         }
-        @media only screen and (max-width: 1000px) {
+        @media only screen and (max-width: $small) {
             width: 100%;
-        }
-        @media only screen and (min-width: 1300px) {
-            width: 80%;
         }
 
         &-text{
             color: $primary;
             font-size: $fz-sm;
             padding:  0 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     }
 
@@ -72,21 +82,19 @@
         width: 25%;
         height: 20vw;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: $small) {
             width: 100%;
             height: auto;
         }
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: $small) {
             width: 40%;
-            height: 150px;
         }
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: $tab-point) {
             width: 35%;
-            height: 170px;
         }
-        @media only screen and (min-width: 1200px) {
-            width: 20%;
-            height: 15vw;
+        @media only screen and (min-width: $desktop-point) {
+            width: 100%;
+            margin-bottom: 1rem;
         }
         
         img{
@@ -95,16 +103,26 @@
             border-top-left-radius: 5px;
             border-bottom-left-radius: 5px;
             object-fit: cover;
-        @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: $small) {
             border-bottom-left-radius: 0px;
             border-top-right-radius: 5px;
-        }
+            }
         }
     }
 }
 .one-column{
     width: 97%;
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: $mobile-point) {
         width: 90%;
     }
+}
+.animate__fadeInLeftBig{
+    width: 33%;
+
+    @media only screen and (max-width: $desktop-point) {
+        width: 100%;
+    }
+}
+.project-link a{
+    color: $highlight;
 }

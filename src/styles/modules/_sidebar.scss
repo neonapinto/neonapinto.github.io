@@ -11,7 +11,7 @@
         backdrop-filter: blur(1rem);
         opacity: 0.9;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: $mobile-point) {
             display: none;
         } 
     }
@@ -36,5 +36,3 @@
     }  
 }
 
-
-// }   

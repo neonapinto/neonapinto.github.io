@@ -4,6 +4,6 @@ My portfolio is built with React and hosted on [Github](https://github.com).
 
 Visit my site at [Neona Pinto](https://neonapinto.github.io)
 
-![image](https://user-images.githubusercontent.com/20532970/201984826-2be2717b-d5c1-4ece-b79c-d4860f535e17.png)
+![image](https://user-images.githubusercontent.com/20532970/201995966-04636865-0995-476a-89ec-f9688b5175c8.png)
 
 

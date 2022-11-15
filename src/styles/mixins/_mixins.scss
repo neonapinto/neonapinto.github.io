@@ -1,0 +1,34 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin responsive-icon-style {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $primary;
+}
+
+@mixin input-style {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid $secondary;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: $primary;
+}
+
+@mixin scale-animation($scale){
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover { 
+        transform: scale($scale); 
+    }
+}
+
+@mixin  border($top, $left, $blur, $spread, $color) {
+    -webkit-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
+}

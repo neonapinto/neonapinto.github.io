@@ -1,0 +1,38 @@
+.text{
+    
+    &-tagline{
+        color: $highlight;
+        margin: 0;
+        font-size: $fz-sm;
+    }
+
+    &-heading{
+        color: $primary;
+        margin: 0;
+        font-size: clamp(40px, 8vw, 80px);
+    }
+
+    &-sub-heading{
+        color: $secondary;
+        margin: 0;
+        font-size: $fz-xl;
+    }
+
+    &-heading{
+        font-weight: bold;
+    }
+
+    &-sub-heading{
+        font-weight: 700;
+    }
+
+    &-body{
+        color: $secondary;
+        font-size: $fz-md;
+        width: 85%;
+
+        @media only screen and (max-width: $big) {
+            width: 100%;
+        }
+    }
+}

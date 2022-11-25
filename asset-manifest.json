@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/neonapinto.github.io/static/css/main.b2ca15ef.css",
+    "main.js": "/neonapinto.github.io/static/js/main.ab7b6660.js",
+    "index.html": "/neonapinto.github.io/index.html",
+    "main.b2ca15ef.css.map": "/neonapinto.github.io/static/css/main.b2ca15ef.css.map",
+    "main.ab7b6660.js.map": "/neonapinto.github.io/static/js/main.ab7b6660.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2ca15ef.css",
+    "static/js/main.ab7b6660.js"
+  ]
+}

@@ -133,13 +133,10 @@
   top: 1rem;
   right: 1rem;
   color: #FFFEFA;
+  top: 12px;
   left: 1rem;
   margin: 0;
-  font-family: "Monoton";
-  color: #00FEF4;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 40px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }

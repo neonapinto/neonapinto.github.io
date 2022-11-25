@@ -47,11 +47,10 @@
 
     &-logo{
         @include responsive-icon-style;
+        top: 12px;
         left: 1rem;
         margin: 0;
-        font-family: "Monoton";
-        color: $highlight;
-        width: fit-content;
+        width: 40px;
         @include scale-animation(1.1);
     }
 }

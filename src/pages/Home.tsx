@@ -5,6 +5,7 @@ import Body from './../components/Text/Body';
 import TwoColumns from './../layouts/TwoColumns';
 import Avatar from './../components/Avatar/Avatar';
 import { TypeAnimation } from 'react-type-animation';
+import Heading from '../components/Text/Heading';
 
 const Home:FC = () =>{ 
     return(

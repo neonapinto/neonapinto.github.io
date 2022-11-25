@@ -14,19 +14,31 @@ module.exports = {
     },
     module: {
         rules: [
-        {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-        },
+            {
+                test: /\.jsx?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+             },
+             {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader' ]
+            },
+            {
+             test: /\.tsx?$/,
+             exclude: /node_modules/,
+             loader: 'ts-loader'
+             }
         ]
         },
-        resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
-    },
+        resolve: 
+        {
+           extensions: [ '.tsx', '.ts', '.js', '.css', '.scss' ]  
+        },
     plugins:[
         new HtmlWebpackPlugin({
-        template: './public/index.html'
-        })
+            template: path.join(__dirname,'./public/index.html'),
+            favicon: "./public/favicon.ico",
+            manifest: "./public/manifest.json",
+       }) 
     ]
 }

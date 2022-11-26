@@ -11,6 +11,8 @@
 @import './modules/about';
 @import './modules/projects';
 @import './modules/contact';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 
 *{
     box-sizing: border-box; 
@@ -22,10 +24,14 @@ html, body, #root{
 }
 
 body{
-    font-family: 'Sofia';
     background-color: $bgcolor;
     font-size: $fz-xl;
     line-height: 1.5;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .body-container{

@@ -9,7 +9,7 @@ const Cards:FC<any> = (props:any) => {
                 {/* <div className='cards-container' key={item.img_src} onClick={() => {window.open(item.link,'_blank')}}> */}
                 <div className='cards-container' key={item.img_src}>
                     <div className='cards-img-container'>
-                        <img src={`/img/projects/${item.img_src}.jpg`} alt={item.name} className='cards-img' loading='lazy'/>
+                        <img src={`/img/projects/${item.img_src}.png`} alt={item.name} className='cards-img' loading='lazy'/>
                     </div>
                     <div className='cards-content'>
                         <SubHeading>{item.name}</SubHeading>

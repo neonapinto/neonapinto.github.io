@@ -12,7 +12,7 @@ interface ToggleProps{
 const Sidebar:FC<ToggleProps>= ({toggle}) => {
   return (
     <aside className='sidebar-container'>
-        <p className='navbar-logo'>NP</p>
+        <img src='./img/logo.png' className='navbar-logo' alt="NP"/>
         <IconContext.Provider value={{className: 'sidebar-icon sidebar-icon-close' }} >
             <AiOutlineClose onClick={toggle}/>
         </IconContext.Provider>
